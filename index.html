@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="Work samples from John Crye: World Bank deforestation analysis, the Nuentero investor platform, Maryland energy testimony, solar market writing, and the HempWood press record.">
+<title>John Crye Portfolio</title>
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+/* Layout: an analyst's evidence file. Label column (org, dates) beside the work. The page stays black and white; only the evidence (maps, photos, product) carries color. Type matches the CV. */
+:root {
+  --paper: #FAFAF8;
+  --ink: #0D0D0C;
+  --ink-2: #57574F;
+  --rule: #E1E0DA;
+  --fill: #F0EFEA;
+  --display: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --body: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper: #121211; --ink: #EDEDE8; --ink-2: #A3A39B; --rule: #2C2C29; --fill: #1C1C1A; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper: #121211; --ink: #EDEDE8; --ink-2: #A3A39B; --rule: #2C2C29; --fill: #1C1C1A; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16.5px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-color: var(--ink); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+p { margin: 0; }
+ul { margin: 0; padding-left: 1.1em; }
+.wrap { max-width: 1060px; margin: 0 auto; padding-inline: 28px; padding-block: 48px 64px; }
+
+/* header */
+.top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: end; padding-bottom: 28px; border-bottom: 2px solid var(--ink); }
+.eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+h1 { font-size: clamp(44px, 7vw, 68px); line-height: .95; letter-spacing: -.035em; font-weight: 700; margin-top: 10px; }
+.lede { font-size: 19px; line-height: 1.5; max-width: 62ch; margin-top: 18px; }
+.contact { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 18px; font-size: 14px; color: var(--ink-2); }
+.contact span, .contact a { white-space: nowrap; }
+.headshot { width: 132px; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; border-radius: 3px; filter: grayscale(1); max-width: 100%; }
+
+/* index */
+.index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--rule); }
+.index a { display: block; padding: 16px 18px 18px 0; text-decoration: none; border-top: 1px solid var(--rule); }
+.index a:nth-child(-n+3) { border-top: 0; }
+.index b { display: block; font-family: var(--display); font-weight: 600; font-size: 16px; }
+.index span { display: block; font-size: 13.5px; color: var(--ink-2); line-height: 1.45; margin-top: 2px; }
+.index a:hover b { text-decoration: underline; text-underline-offset: 3px; }
+
+/* sections */
+.sec { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 44px; padding-block: 56px; border-bottom: 1px solid var(--rule); scroll-margin-top: 12px; }
+.sec:last-of-type { border-bottom: 0; }
+.label { font-size: 13.5px; line-height: 1.5; color: var(--ink-2); display: flex; flex-direction: column; gap: 6px; }
+.label .org { font-family: var(--display); font-weight: 600; font-size: 15px; color: var(--ink); line-height: 1.3; }
+.body { min-width: 0; display: flex; flex-direction: column; gap: 22px; }
+h2 { font-size: clamp(25px, 3.2vw, 32px); line-height: 1.15; letter-spacing: -.02em; font-weight: 600; }
+.body > p, .prose { max-width: 66ch; }
+.body li { margin-bottom: 6px; max-width: 64ch; }
+h3 { font-size: 13px; font-family: var(--mono); font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
+
+figure { margin: 0; display: flex; flex-direction: column; gap: 8px; break-inside: avoid; }
+figure img { display: block; width: 100%; height: auto; border-radius: 3px; border: 1px solid var(--rule); background: #fff; }
+figcaption { font-size: 13px; line-height: 1.5; color: var(--ink-2); max-width: 72ch; }
+.src { font-family: var(--mono); font-size: 11.5px; letter-spacing: .01em; }
+.pair { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+
+.findings { list-style: none; padding: 0; display: grid; gap: 14px; counter-reset: f; }
+.findings li { display: grid; grid-template-columns: 26px minmax(0, 1fr); margin: 0; max-width: 70ch; }
+.findings li::before { counter-increment: f; content: counter(f); font-family: var(--mono); font-size: 12px; color: var(--ink-2); padding-top: 3px; }
+
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; min-width: 420px; }
+th, td { text-align: left; padding: 7px 18px 7px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 500; color: var(--ink-2); font-size: 12.5px; }
+td.n, th.n { text-align: right; font-family: var(--mono); font-size: 13px; }
+
+.model { font-family: var(--mono); font-size: 13px; line-height: 1.7; background: var(--fill); border-radius: 3px; padding: 14px 16px; overflow-x: auto; white-space: nowrap; }
+.tools { font-family: var(--mono); font-size: 12px; color: var(--ink-2); line-height: 1.8; }
+
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--ink); }
+.stats div { padding: 12px 16px 4px 0; }
+.stats b { display: block; font-family: var(--display); font-size: 30px; font-weight: 600; letter-spacing: -.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 13px; color: var(--ink-2); line-height: 1.4; display: block; margin-top: 4px; }
+
+.records { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.rec { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.rec .k { font-family: var(--display); font-weight: 600; font-size: 15px; line-height: 1.35; }
+.rec .k small { display: block; font-family: var(--body); font-weight: 400; font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+.rec p { font-size: 15px; max-width: 64ch; }
+.out { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 2px; padding: 0 6px; margin-left: 6px; color: var(--ink-2); vertical-align: 1px; white-space: nowrap; }
+
+.articles { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.art { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 20px; }
+.art time { font-family: var(--mono); font-size: 12px; color: var(--ink-2); padding-top: 3px; }
+.art a { font-family: var(--display); font-weight: 600; font-size: 17px; line-height: 1.3; }
+.art p { font-size: 14.5px; color: var(--ink-2); margin-top: 6px; max-width: 66ch; }
+
+.press { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
+.press li { break-inside: avoid; padding: 10px 0; border-top: 1px solid var(--rule); margin: 0; font-size: 14px; line-height: 1.45; }
+.press .o { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-2); }
+.press .w { display: block; color: var(--ink-2); font-size: 13px; margin-top: 2px; }
+
+.foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 24px; border-top: 2px solid var(--ink); font-size: 13px; color: var(--ink-2); }
+
+/* Nuentero investor view, rebuilt with demo data. Deliberately single-theme: it depicts the product's own dark interface. */
+.app { background: #0E0D0B; color: #F4F1E8; border-radius: 10px; overflow: hidden; font-family: var(--body); font-size: 13px; line-height: 1.45; border: 1px solid #2A271E; -webkit-print-color-adjust: exact; print-color-adjust: exact; break-inside: avoid; }
+.app-url { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 14px; background: #17150F; border-bottom: 1px solid rgba(245,242,232,.08); font-family: var(--mono); font-size: 11px; color: #6E695C; }
+.chip { border: 1px solid #E0A435; color: #E0A435; border-radius: 99px; padding: 0 8px; font-size: 10.5px; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+.app-in { padding: 16px; display: grid; gap: 12px; }
+.app-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 14px; }
+.mark { width: 26px; height: 26px; border-radius: 6px; background: #E0A435; color: #1A1206; display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 14px; }
+.brand small { display: block; font-weight: 400; color: #A8A296; font-size: 11.5px; }
+.lang { display: inline-flex; border: 1px solid rgba(245,242,232,.16); border-radius: 6px; overflow: hidden; }
+.lang button { font: 500 11.5px var(--mono); background: transparent; color: #A8A296; border: 0; padding: 5px 10px; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: #F4F1E8; color: #0E0D0B; }
+.tabs { display: flex; gap: 18px; border-bottom: 1px solid rgba(245,242,232,.08); overflow-x: auto; white-space: nowrap; color: #A8A296; font-size: 12.5px; }
+.tabs span { padding: 6px 0 9px; }
+.tabs .on { color: #F4F1E8; box-shadow: inset 0 -2px 0 #E0A435; }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.kpi { background: #17150F; border: 1px solid rgba(245,242,232,.08); border-radius: 8px; padding: 10px 12px; }
+.kpi span { display: block; color: #A8A296; font-size: 11.5px; }
+.kpi b { display: block; font-family: var(--mono); font-weight: 500; font-size: 17px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.kpi b.pos { color: #8DB88C; }
+.card { background: #17150F; border: 1px solid rgba(245,242,232,.08); border-radius: 8px; padding: 12px 14px; min-width: 0; }
+.card-h { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.card-h b { font-weight: 600; font-size: 13px; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; color: #A8A296; font-size: 11px; }
+.legend i { display: inline-block; width: 14px; height: 0; vertical-align: middle; margin-right: 5px; }
+.app-chart { display: block; width: 100%; height: auto; font-family: var(--mono); }
+.app-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 12px; }
+.app table { min-width: 0; width: 100%; font-size: 12px; }
+.app th, .app td { border-bottom: 1px solid rgba(245,242,232,.08); padding: 6px 8px 6px 0; color: #F4F1E8; }
+.app th { color: #6E695C; font-weight: 500; font-size: 11px; }
+.app td.n { font-family: var(--mono); font-size: 12px; }
+.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #6F9A6E; margin-right: 6px; vertical-align: 1px; }
+.dot.wait { background: #E0A435; }
+.rows { display: grid; gap: 0; }
+.rows div { display: flex; justify-content: space-between; gap: 10px; padding: 6px 0; border-bottom: 1px solid rgba(245,242,232,.08); font-size: 12px; }
+.rows div:last-child { border-bottom: 0; }
+.rows em { font-style: normal; color: #A8A296; text-align: right; }
+
+@media (max-width: 860px) {
+  .sec { grid-template-columns: minmax(0, 1fr); gap: 18px; padding-block: 44px; }
+  .label { flex-direction: row; flex-wrap: wrap; gap: 4px 14px; }
+  .label .org { width: 100%; }
+  .index { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .index a:nth-child(3) { border-top: 1px solid var(--rule); }
+}
+@media (max-width: 640px) {
+  .wrap { padding-inline: 16px; padding-block: 32px 48px; }
+  .top { grid-template-columns: minmax(0, 1fr); }
+  .headshot { width: 96px; grid-row: 1; }
+  .index { grid-template-columns: minmax(0, 1fr); }
+  .index a:nth-child(-n+3) { border-top: 1px solid var(--rule); }
+  .index a:first-child { border-top: 0; }
+  .pair, .app-grid { grid-template-columns: minmax(0, 1fr); }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rec, .art { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .press { columns: 1; }
+  .lede { font-size: 17px; }
+  .stats b { font-size: 24px; }
+  .stats div { padding-right: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+@media print {
+  @page { size: letter; margin: 0.55in 0.6in; }
+  body { font-size: 11.5px; }
+  .wrap { max-width: none; padding: 0; }
+  .lede { font-size: 13.5px; }
+  h1 { font-size: 40px; }
+  h2 { font-size: 20px; }
+  .index { display: none; }
+  a { text-decoration: none; }
+  /* Chromium fragments grid and column-flex badly across pages: use plain block flow in print. */
+  .sec { display: block; padding-block: 22px; }
+  .label { display: block; margin-bottom: 8px; }
+  .label span { display: inline; margin-right: 14px; }
+  .label .org { font-size: 12.5px; }
+  .body { display: block; }
+  .body > * + * { margin-top: 12px; }
+  h2, h3 { break-after: avoid; }
+  .rec, .art, .findings li, .press li, table, .stats { break-inside: avoid; }
+  figure { display: block; }
+  figcaption { margin-top: 6px; }
+  figure img { width: auto; max-width: 100%; max-height: 3in; }
+  .pair figure img { max-height: 2.2in; }
+  #supply-chain figure img, #hempwood figure img { max-height: 2.2in; }
+  .label { break-after: avoid; }
+  .press li { padding: 6px 0; font-size: 11px; }
+  .app-chart { max-height: 1.75in; }
+  #nuentero figure { break-inside: auto; }
+  .app-in { gap: 8px; padding: 12px; }
+  .kpi { padding: 6px 10px; }
+  .press { columns: 2; }
+}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+<header class="top">
+  <div>
+    <div class="eyebrow">Work samples · October 2026</div>
+    <h1>John Crye</h1>
+    <p class="lede">Energy and climate analyst in Washington, DC. This page collects the work behind my CV: spatial and commodity analysis for the World Bank, the solar finance models and investor platform I built at Nuentero, written testimony on three Maryland energy bills, and the press record from launching a U.S. hemp fiber manufacturer.</p>
+    <div class="contact">
+      <span>john.crye@outlook.com</span>
+      <a href="https://www.linkedin.com/in/johncrye">linkedin.com/in/johncrye</a>
+      <span>English and Spanish</span>
+    </div>
+  </div>
+  <img class="headshot" src="img/bio-headshot.jpg" alt="Portrait of John Crye">
+</header>
+
+<nav class="index" aria-label="Sections">
+  <a href="#world-bank"><b>World Bank</b><span>Satellite forest-loss data against commodity prices and trade</span></a>
+  <a href="#nuentero"><b>Nuentero</b><span>Solar loan models and a bilingual investor platform</span></a>
+  <a href="#supply-chain"><b>Supply chain data</b><span>A 106-company supplier register for offshore wind</span></a>
+  <a href="#policy"><b>Policy record</b><span>Maryland testimony, DOE and state grants</span></a>
+  <a href="#writing"><b>Writing</b><span>Published analysis of Colombia's solar market</span></a>
+  <a href="#hempwood"><b>HempWood and press</b><span>Taking a new U.S. manufacturer to market</span></a>
+</nav>
+
+<!-- World Bank -->
+<section class="sec" id="world-bank">
+  <div class="label">
+    <span class="org">World Bank Group, Climate Change Division</span>
+    <span>Short Term Temporary (STT)</span>
+    <span>Nov 2022 to Dec 2023</span>
+    <span>Delivered as my MPP capstone, December 2023</span>
+  </div>
+  <div class="body">
+    <h2>What drives deforestation in the Brazilian Amazon</h2>
+    <p>The Climate Change team's starting question was whether hydropower and biomass were driving forest loss in the Amazon. I began there and widened the study to commodity markets, protected areas, and settlement. The work set 20 years of satellite forest-loss data against commodity prices, Brazilian export volumes, land designations, and population growth.</p>
+
+    <figure>
+      <img src="img/wb-map.jpg" alt="Map of the Brazilian Amazon showing forest cover loss since 2001 in orange and yellow, concentrated along the southern and eastern edges, with hatched Indigenous lands and conservation units largely intact">
+      <figcaption>Forest cover loss since 2001 (orange to yellow) against Indigenous lands (hatched), conservation units (crosshatched), and 2021 population density (red). Clearing runs along the southern and eastern frontier and mostly stops at the edge of Indigenous lands. <span class="src">Sources: UMD Hansen Global Forest Change, INPE. Mapped in Google Earth Engine and QGIS.</span></figcaption>
+    </figure>
+
+    <div class="pair">
+      <figure>
+        <img src="img/wb-soy.jpg" alt="Stacked area chart of annual forest cover loss by Brazilian state, 2001 to 2020, with 2003 to 2010 shaded and a vertical line at the 2006 Soy Moratorium">
+        <figcaption>Annual forest loss by state, 2001 to 2020, in km². Shading marks Lula da Silva's 2003 to 2010 terms; the line marks the July 2006 Soy Moratorium. <span class="src">Source: UMD Hansen.</span></figcaption>
+      </figure>
+      <figure>
+        <img src="img/wb-prices.jpg" alt="Line chart of beef, lumber and soy prices in US dollars from 2001 to 2022 above a bar chart of Brazilian export volumes for each commodity">
+        <figcaption>Beef, lumber, and soy prices against Brazilian export volumes, 2001 to 2022. <span class="src">Sources: FRED (St. Louis Fed), ITC.</span></figcaption>
+      </figure>
+    </div>
+
+    <h3>What the data showed</h3>
+    <ol class="findings">
+      <li><span>Cumulative loss reached roughly 390,000 km² by 2020, about 10% of the 4 million km² of forest standing in 2000. Pará and Mato Grosso had the most volatile year-to-year clearing.</span></li>
+      <li><span>Annual loss fell through 2003 to 2010, a period that includes the 2006 Soy Moratorium, then spiked in 2016.</span></li>
+      <li><span>Prices tracked export volumes and values for all three commodities, most closely for beef and wood (table below).</span></li>
+      <li><span>Indigenous lands held their forest better than any other land designation. Some conservation units showed clearing inside their boundaries.</span></li>
+    </ol>
+
+    <div class="tablewrap">
+      <table>
+        <caption class="src" style="text-align:left;padding-bottom:6px;color:var(--ink-2)">Correlation with commodity price, Brazil, 2001 to 2020</caption>
+        <thead><tr><th>Commodity</th><th class="n">Export volume</th><th class="n">Export value</th></tr></thead>
+        <tbody>
+          <tr><td>Beef</td><td class="n">0.79</td><td class="n">0.89</td></tr>
+          <tr><td>Lumber / wood</td><td class="n">0.64</td><td class="n">0.92</td></tr>
+          <tr><td>Soy</td><td class="n">0.45</td><td class="n">0.59</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>I recommended a cattle moratorium modeled on the soy agreement, stronger Forest Code enforcement with monitoring for circumvention, and hex-binned maps to focus enforcement where clearing concentrates. The proposed next step was a spatial model of where clearing happens:</p>
+    <div class="model">Deforestation = α<br>&nbsp;&nbsp;+ β₁·Price_Lumber + β₂·Price_Beef + β₃·Distance_to_Road<br>&nbsp;&nbsp;+ β₄·Inside_Indigenous_Area + β₅·Inside_Conservation_Area<br>&nbsp;&nbsp;+ β₆·Price_Mining + ε</div>
+    <p class="tools">Python (pandas) · Google Earth Engine · QGIS · FRED · ITC trade data · UMD Hansen · INPE</p>
+  </div>
+</section>
+
+<!-- Nuentero -->
+<section class="sec" id="nuentero">
+  <div class="label">
+    <span class="org">Nuentero Inc</span>
+    <span>Founder</span>
+    <span>May 2025 to present</span>
+    <span>Delaware C corporation, Washington, DC</span>
+  </div>
+  <div class="body">
+    <h2>Solar loan models and the investor platform behind them</h2>
+    <p>Nuentero finances renewable energy in the U.S. and in developing markets. Its first loan portfolio, in Colombia, was funded by 7 investors across 6 projects in 4 cities. I built the financial models, ran the borrower and installer diligence, and wrote the software investors use to follow their capital.</p>
+
+    <figure>
+      <div class="app" aria-label="Rebuilt Nuentero investor portfolio view with demo data">
+        <div class="app-url"><span>app.nuentero.com / <span data-es="portafolio">portfolio</span></span><span class="chip" data-es="Datos demo">Demo data</span></div>
+        <div class="app-in">
+          <div class="app-head">
+            <div class="brand"><span class="mark">N</span><span>Nuentero<small data-es="Inversionista demo">Demo investor</small></span></div>
+            <div class="lang" role="group" aria-label="Interface language">
+              <button type="button" id="lang-en" aria-pressed="true">EN</button>
+              <button type="button" id="lang-es" aria-pressed="false">ES</button>
+            </div>
+          </div>
+          <div class="tabs">
+            <span class="on" data-es="Portafolio">Portfolio</span><span data-es="Producción">Production</span><span data-es="Distribuciones">Distributions</span><span data-es="Documentos">Documents</span><span data-es="Cumplimiento">Compliance</span><span data-es="Informes">Reports</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><span data-es="Capital comprometido">Capital committed</span><b>COP 48.0M</b></div>
+            <div class="kpi"><span data-es="Proyectos en operación">Projects operating</span><b>3</b></div>
+            <div class="kpi"><span data-es="Generación, últimos 12 meses">Generation, last 12 months</span><b>115,500 kWh</b></div>
+            <div class="kpi"><span data-es="Frente a P50">Versus P50</span><b class="pos">101%</b></div>
+          </div>
+          <div class="card">
+            <div class="card-h">
+              <b data-es="Generación mensual, kWh">Monthly generation, kWh</b>
+              <span class="legend"><span><i style="height:8px;width:10px;background:#3E7CA8;border-radius:2px"></i><span data-es="Real">Actual</span></span><span><i style="border-top:2px solid #E0A435"></i>P50</span><span><i style="border-top:2px dashed #A8A296"></i>P90</span></span>
+            </div>
+<svg class="app-chart" viewBox="0 0 640 210" role="img" aria-label="Bar chart of monthly generation against P50 and P90 lines, demo data">
+<line x1="48" x2="632" y1="176.0" y2="176.0" stroke="rgba(245,242,232,.09)" stroke-width="1"/>
+<text x="40" y="180.0" text-anchor="end" fill="#6E695C" font-size="10">0k</text>
+<line x1="48" x2="632" y1="122.0" y2="122.0" stroke="rgba(245,242,232,.09)" stroke-width="1"/>
+<text x="40" y="126.0" text-anchor="end" fill="#6E695C" font-size="10">4k</text>
+<line x1="48" x2="632" y1="68.0" y2="68.0" stroke="rgba(245,242,232,.09)" stroke-width="1"/>
+<text x="40" y="72.0" text-anchor="end" fill="#6E695C" font-size="10">8k</text>
+<line x1="48" x2="632" y1="14.0" y2="14.0" stroke="rgba(245,242,232,.09)" stroke-width="1"/>
+<text x="40" y="18.0" text-anchor="end" fill="#6E695C" font-size="10">12k</text>
+<rect x="58.5" y="43.0" width="24" height="133.0" rx="2" fill="#3E7CA8"/>
+<text x="70.5" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="sep">Sep</text>
+<rect x="103.4" y="55.8" width="24" height="120.2" rx="2" fill="#3E7CA8"/>
+<text x="115.4" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="oct">Oct</text>
+<rect x="148.3" y="64.0" width="24" height="112.0" rx="2" fill="#3E7CA8"/>
+<text x="160.3" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="nov">Nov</text>
+<rect x="193.2" y="42.3" width="24" height="133.7" rx="2" fill="#3E7CA8"/>
+<text x="205.2" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="dic">Dec</text>
+<rect x="238.2" y="32.9" width="24" height="143.1" rx="2" fill="#3E7CA8"/>
+<text x="250.2" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="ene">Jan</text>
+<rect x="283.1" y="39.0" width="24" height="137.0" rx="2" fill="#3E7CA8"/>
+<text x="295.1" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="feb">Feb</text>
+<rect x="328.0" y="46.4" width="24" height="129.6" rx="2" fill="#3E7CA8"/>
+<text x="340.0" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="mar">Mar</text>
+<rect x="372.9" y="61.9" width="24" height="114.1" rx="2" fill="#3E7CA8"/>
+<text x="384.9" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="abr">Apr</text>
+<rect x="417.8" y="53.8" width="24" height="122.2" rx="2" fill="#3E7CA8"/>
+<text x="429.8" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="may">May</text>
+<rect x="462.8" y="47.8" width="24" height="128.2" rx="2" fill="#3E7CA8"/>
+<text x="474.8" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="jun">Jun</text>
+<rect x="507.7" y="35.6" width="24" height="140.4" rx="2" fill="#3E7CA8"/>
+<text x="519.7" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="jul">Jul</text>
+<rect x="552.6" y="31.5" width="24" height="144.5" rx="2" fill="#3E7CA8"/>
+<text x="564.6" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="ago">Aug</text>
+<rect x="597.5" y="41.7" width="24" height="134.3" rx="2" fill="#3E7CA8"/>
+<text x="609.5" y="194" text-anchor="middle" fill="#A8A296" font-size="10" data-es="sep">Sep</text>
+<polyline points="70.5,58.1 115.4,64.2 160.3,69.1 205.2,59.3 250.2,50.7 295.1,54.4 340.0,55.6 384.9,66.7 429.8,67.9 474.8,61.7 519.7,51.9 564.6,49.5 609.5,56.8" fill="none" stroke="#A8A296" stroke-width="1.5" stroke-dasharray="4 3"/>
+<polyline points="70.5,46.4 115.4,53.2 160.3,58.5 205.2,47.8 250.2,38.3 295.1,42.3 340.0,43.7 384.9,55.8 429.8,57.2 474.8,50.5 519.7,39.7 564.6,37.0 609.5,45.1" fill="none" stroke="#E0A435" stroke-width="2"/>
+<circle cx="609.5" cy="45.1" r="3" fill="#E0A435"/>
+<text x="56" y="206" fill="#6E695C" font-size="9">2025</text><text x="229.7" y="206" fill="#6E695C" font-size="9">2026</text>
+</svg>
+          </div>
+          <div class="app-grid">
+            <div class="card">
+              <div class="card-h"><b data-es="Proyectos">Projects</b></div>
+              <table>
+                <thead><tr><th data-es="Tipo">Type</th><th data-es="Ciudad">City</th><th class="n">kWp</th><th data-es="Estado">Status</th></tr></thead>
+                <tbody>
+                  <tr><td data-es="Techo C&amp;I">C&amp;I rooftop</td><td>Cali</td><td class="n">42</td><td><span class="dot"></span><span data-es="Operando">Operating</span></td></tr>
+                  <tr><td data-es="Comercial">Commercial</td><td>Bogotá</td><td class="n">30</td><td><span class="dot"></span><span data-es="Operando">Operating</span></td></tr>
+                  <tr><td data-es="Residencial">Residential</td><td>Villavicencio</td><td class="n">9</td><td><span class="dot"></span><span data-es="Operando">Operating</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card">
+              <div class="card-h"><b data-es="Distribuciones y cumplimiento">Distributions and compliance</b></div>
+              <div class="rows">
+                <div><span data-es="Distribución T1 2026">Q1 2026 distribution</span><em><span class="dot"></span><span data-es="Pagada, recibo">Paid, receipt</span></em></div>
+                <div><span data-es="Distribución T2 2026">Q2 2026 distribution</span><em><span class="dot"></span><span data-es="Pagada, recibo">Paid, receipt</span></em></div>
+                <div><span data-es="Distribución T3 2026">Q3 2026 distribution</span><em><span class="dot"></span><span data-es="Pagada, recibo">Paid, receipt</span></em></div>
+                <div><span>KYC</span><em><span class="dot"></span><span data-es="Aprobado">Approved</span></em></div>
+                <div><span data-es="Documentos del portafolio">Portfolio documents</span><em><span class="dot wait"></span><span data-es="1 de 4 por confirmar">1 of 4 to acknowledge</span></em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>The investor portfolio view, rebuilt for this page with invented numbers and generic project names; nothing here comes from a real investor account. Switch EN / ES to see the bilingual interface. The production view compares daily meter readings against each project's P50 and P90 estimates. I show the live platform by screen share. <span class="src">Illustration only. Not an offer of securities and not a statement of returns.</span></figcaption>
+    </figure>
+    <ul>
+      <li>Loan portfolio models for residential, commercial, and industrial solar: NPV, IRR, payback, and sensitivity cases.</li>
+      <li>A USD-COP hedging model that shows investors their currency exposure and what a hedge costs them.</li>
+      <li>Diligence on 10+ residential borrowers: credit and ability to pay, property ownership, roof, breaker panel, and interconnection checks, and vetting of the developers and installers serving them.</li>
+      <li>The investor platform: React front end, FastAPI and PostgreSQL back end, Auth0 sign-in, and separate views for investors, developers, and white-label sponsors, in English and Spanish.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Supply chain -->
+<section class="sec" id="supply-chain">
+  <div class="label">
+    <span class="org">MarViento, built at Nuentero</span>
+    <span>April 2026 to present</span>
+    <span>Member, EEMa Colombia Supply Chain Roundtable</span>
+  </div>
+  <div class="body">
+    <h2>A supplier register for Colombia's offshore wind supply chain</h2>
+    <p>MarViento is a directory of the companies that can serve Colombia's offshore wind build-out. I modeled it on Oceantic Network's Supply Chain Connect, the U.S. database I researched companies for as an intern in 2022, and designed the taxonomy, the supplier registration flow, and the admin approval step.</p>
+    <div class="stats">
+      <div><b>106</b><span>companies mapped</span></div>
+      <div><b>187</b><span>categories of services, products, and materials</span></div>
+      <div><b>4</b><span>languages: Spanish, English, Portuguese, Chinese</span></div>
+    </div>
+    <p>I presented it to EEMa Colombia's leadership as a candidate national supplier register. Since September 2026 I have sat on EEMa's Supply Chain Roundtable, one of six groups drafting a civil-society offshore wind strategy for Colombia covering 2027 to 2037.</p>
+    <figure>
+      <img src="img/bio-panel.jpg" alt="Panel of four speakers seated on stage at a conference in Barranquilla">
+      <figcaption>Panelist at Colombia's first offshore wind conference, Barranquilla, 2025, on supply chains and bilateral industrial cooperation.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Policy -->
+<section class="sec" id="policy">
+  <div class="label">
+    <span class="org">Oceantic Network</span>
+    <span>Project Manager</span>
+    <span>Jul 2024 to May 2025</span>
+    <span>Baltimore, MD</span>
+  </div>
+  <div class="body">
+    <h2>Maryland testimony, federal and state grants</h2>
+    <p>I wrote Oceantic Network's written testimony on three 2025 Maryland energy bills, signed by the organization's chief of staff, and ran its grant work. The bill records are public on the General Assembly site.</p>
+    <div class="records">
+      <div class="rec">
+        <div class="k"><a href="https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1037?ys=2025RS">HB 1037 (2025)</a><small>Energy Resource Adequacy and Planning Act</small></div>
+        <p>Testimony filed jointly with SEIA, asking for an ocean renewables study amendment modeled on California SB 605 (2023). The amendment was not in the version enacted in the 2025 special session. <span class="out">Not adopted</span></p>
+      </div>
+      <div class="rec">
+        <div class="k"><a href="https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb0398?ys=2025RS">HB 398</a> / <a href="https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/sb0316?ys=2025RS">SB 316</a> (2025)<small>AACE Act</small></div>
+        <p>Benchmarked New Jersey's State Agreement Approach to planned transmission, with about $900 million in savings estimated by the NJ Board of Public Utilities, against Maryland's 8.5 GW offshore wind goal. <span class="out">Did not pass</span></p>
+      </div>
+      <div class="rec">
+        <div class="k">U.S. Department of Energy<small>Grant application</small></div>
+        <p>Led Oceantic Network's first DOE grant application, with NREL as project partner. <span class="out">Not awarded</span></p>
+      </div>
+      <div class="rec">
+        <div class="k">Maryland Energy Administration<small>Grant award</small></div>
+        <p>Managed compliance and reporting on an MEA grant to Oceantic Network.</p>
+      </div>
+      <div class="rec">
+        <div class="k">SHIPS for America Act<small>Federal, 2025</small></div>
+        <p>Coordinated the member coalition behind Oceantic Network's endorsement, drawn from the Vessel Working Group I led (Jones Act shipbuilders, ABS, NREL).</p>
+      </div>
+      <div class="rec">
+        <div class="k">Government of Colombia<small>Offshore wind leasing</small></div>
+        <p>Presented in Spanish on offshore wind lease opportunities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Writing -->
+<section class="sec" id="writing">
+  <div class="label">
+    <span class="org">Nuentero Insights</span>
+    <span>2026</span>
+    <span><a href="https://nuentero.com/insights">nuentero.com/insights</a></span>
+  </div>
+  <div class="body">
+    <h2>Published analysis of Colombia's solar market</h2>
+    <div class="articles">
+      <div class="art">
+        <time datetime="2026-08-11">Aug 11, 2026</time>
+        <div><a href="https://nuentero.com/insights/colombia-grid-connection-queue">Colombia's Grid Connection Queue: Why Approved Solar Megawatts Are Not Operating Assets</a>
+        <p>About 13.5 GW of approved solar against roughly 2.2 GW operating, how UPME's transmission capacity assignment sits between a permitted project and a financeable one, and what the May 2026 rule change does to diligence.</p></div>
+      </div>
+      <div class="art">
+        <time datetime="2026-08-17">Aug 17, 2026</time>
+        <div><a href="https://nuentero.com/insights/how-colombia-solar-sells-power">How Colombian Solar Sells Power: The Spot Market, Bilateral Contracts, and the First 15-Year Auction</a>
+        <p>Colombia's first long-term auction under Decree 1091 awarded 995 MW of solar and 100 MW of battery storage at COP 315.87 per kWh on 15-year contracts. How each revenue route changes what an investor should check.</p></div>
+      </div>
+      <div class="art">
+        <time datetime="2026-04-07">Apr 7, 2026</time>
+        <div><a href="https://nuentero.com/insights/currency-risk-colombian-solar">Currency Risk and the Colombian Solar Opportunity: A Framework for USD Investors</a>
+        <p>Where solar cash flows in Colombia come from, what peso weakness does to them, and how to diligence and hedge the currency exposure.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HempWood -->
+<section class="sec" id="hempwood">
+  <div class="label">
+    <span class="org">Fibonacci LLC (HempWood)</span>
+    <span>Marketing and Sales Manager</span>
+    <span>Jun 2018 to Nov 2020</span>
+    <span>Murray, KY</span>
+  </div>
+  <div class="body">
+    <h2>Taking the first U.S. hemp fiber manufacturer to market</h2>
+    <p>I joined as the first commercial hire and ran sales, pricing, the website, payments, fulfillment, and press while the 15,500 sq. ft. factory came online and the company grew to 20 employees. I also secured a USDA grant for a bio-burner that heats the product ovens and commissioned a GHG accounting study of the product line.</p>
+    <div class="stats">
+      <div><b>$130K</b><span>direct sales in the first 12 months</span></div>
+      <div><b>500,000</b><span>website views in the first 12 months</span></div>
+      <div><b>$20,000</b><span>USDA REAP grant for renewable process heat</span></div>
+    </div>
+    <figure>
+      <img src="img/bio-factory.jpg" alt="HempWood production team standing on the factory floor in Murray, Kentucky">
+      <figcaption>HempWood production team, Murray, Kentucky.</figcaption>
+    </figure>
+
+    <h3>Press record</h3>
+    <ul class="press">
+      <li><span class="o">UPI</span><a href="https://www.upi.com/Top_News/US/2019/10/02/Hemp-hardwoods-bioplastics-expand-crop-use-beyond-CBD/3921569380690/">Hemp hardwoods, bioplastics expand crop use beyond CBD</a><span class="w">Quoted; records House Agriculture Committee Chairman Collin Peterson's visit</span></li>
+      <li><span class="o">Woodworking Network</span><a href="https://www.woodworkingnetwork.com/news/woodworking-industry-news/oak-out-hemp-hempwood-factory-opens-kentucky">Oak is out, hemp is in: HempWood factory opens in Kentucky</a><span class="w">The outlet's most-read article of 2019; records the $300,000 KEDFA incentive</span></li>
+      <li><span class="o">Grit Daily</span><a href="https://gritdaily.com/one-factory-in-kentucky-is-pretty-much-the-entire-u-s-hemp-fiber-industry/">The entire U.S. hemp fiber industry is one factory in Kentucky</a><span class="w">Profile on leading a startup through the pandemic</span></li>
+      <li><span class="o">Lancaster Farming Podcast</span><a href="https://www.lancasterfarming.com/farming-news/hemp/podcast/davidson-and-diamond-form-hemp-caucus-in-the-pennsylvania-state-house/article_2b0c1386-5273-11ea-9188-9f7e0c26c1d0.html">Davidson and Diamond form Hemp Caucus in the Pennsylvania State House</a><span class="w">Guest, product overview</span></li>
+      <li><span class="o">HempWood (YouTube)</span><a href="https://www.youtube.com/watch?v=Q0HPjgVpch0">HempWood Origin Story</a><span class="w">Directed the video</span></li>
+      <li><span class="o">House.gov, Rep. James Comer</span><a href="https://comer.house.gov/2019/9/congressman-comer-hosts-agriculture-committee-chairman-collin-peterson-murray">Congressman Comer hosts Agriculture Committee Chairman Collin Peterson in Murray</a><span class="w">Record of the chairman's visit to the factory</span></li>
+      <li><span class="o">USDA Rural Development</span><a href="https://www.rd.usda.gov/newsroom/news-release/usda-invests-2m-environmentally-conscious-projects-across-ky">USDA invests $2M+ in environmentally conscious projects across KY</a><span class="w">Record of the $20,000 REAP grant</span></li>
+      <li><span class="o">Area Development</span><a href="https://www.areadevelopment.com/newsItems/3-21-2019/fibonacci-hempwood-alloway-county-kentucky.shtml">Fibonacci plans HempWood manufacturing center in Calloway County, Kentucky</a><span class="w">Records Agriculture Commissioner Ryan Quarles's involvement</span></li>
+      <li><span class="o">Murray Ledger &amp; Times</span><a href="https://www.murrayledger.com/news/agriculture/murray-state-has-played-major-role-in-hempwood-plant/article_161f61ba-cac6-11e9-a028-db362f36c2fc.html">Murray State has played major role in HempWood plant</a><span class="w">Partnership with Murray State University</span></li>
+      <li><span class="o">Murray Ledger &amp; Times</span><a href="https://www.murrayledger.com/news/agriculture/wilson-ky-has-small-window-for-establishing-hemp-facilities/article_ea5be88c-8e48-11e9-b923-ff2a155af5e1.html">Wilson: Ky. has small window for establishing hemp facilities</a><span class="w">Feature photo</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>John Crye · Washington, DC · john.crye@outlook.com</span>
+  <span>Updated October 2026</span>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var nodes = document.querySelectorAll('.app [data-es]');
+  nodes.forEach(function (n) { n.setAttribute('data-en', n.textContent); });
+  var en = document.getElementById('lang-en'), es = document.getElementById('lang-es');
+  function set(lang) {
+    nodes.forEach(function (n) { n.textContent = n.getAttribute('data-' + lang); });
+    en.setAttribute('aria-pressed', String(lang === 'en'));
+    es.setAttribute('aria-pressed', String(lang === 'es'));
+  }
+  en.addEventListener('click', function () { set('en'); });
+  es.addEventListener('click', function () { set('es'); });
+})();
+</script>
+
+</body>
+</html>
